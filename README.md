@@ -246,8 +246,8 @@ In order to map `contact` object data from Salesforce.com to a Java object we ca
 
     package com.example.model;
 
-import org.codehaus.jackson.annotate.JsonIgnoreProperties;
-import org.codehaus.jackson.annotate.JsonProperty;
+    import org.codehaus.jackson.annotate.JsonIgnoreProperties;
+    import org.codehaus.jackson.annotate.JsonProperty;
 
     @JsonIgnoreProperties(ignoreUnknown=true)
     public class Person {
