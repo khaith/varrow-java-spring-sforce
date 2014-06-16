@@ -24,7 +24,8 @@ This application can be run on:
 
 ## Clone this app locally:
 
-```$ git clone https://github.com/forgreed/varrow-java-spring-sforce.git```  
+`$ git clone https://github.com/forgreed/varrow-java-spring-sforce.git`  
+'$ cd arrow-java-spring-sforce'
 
 ## Running the app locally
 
