@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>hello-java-spring-force_dot_com</title>
+    <title>Varrow's Java Spring MVC Template</title>
 </head>
 <body>
 	<script>
