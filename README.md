@@ -94,14 +94,20 @@ This application can be run on:
 
     `$ git clone https://github.com/forgreed/varrow-java-spring-sforce.git`  
 
-2. Set app name and environment variables in `/manifest.yml`  
+2. Set app name and environment variables in `/manifest.yml`
 
-3. Build the app using and Push to Cloud Foundry
+3. Setup OAuth Remote Access in Salesforce.com
+
+    1. Go to Salesforce.com's Setup page
+    2. Go to Create -> Apps
+    3. Add a new Connected App with a URL of: `http://your-app.cfapps.io/_auth`  
+
+4. Build the app using and Push to Cloud Foundry
 
     `$ mvn clean install`  
     `$ cf push`  
 
-4. Navigate to the presented url, i.e. `my-app.cfapps.io`
+5. Navigate to the presented url, i.e. `my-app.cfapps.io`
 
 ## To do:
 
