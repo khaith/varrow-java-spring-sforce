@@ -39,69 +39,69 @@ This application can be run on:
 
     * Linux/Mac:
 
-              ```$ export OAUTH_CLIENT_KEY='Key without Quotes'  
-              ```$ export OAUTH_CLIENT_SECRET='Secret without Quotes'```  
+              $ export OAUTH_CLIENT_KEY='Key without Quotes'  
+              $ export OAUTH_CLIENT_SECRET='Secret without Quotes'   
 
     * Windows:
 
-            ```$ set OAUTH_CLIENT_KEY='Key without Quotes'```  
-            ```$ set OAUTH_CLIENT_SECRET='Secret without Quotes'```  
+            $ set OAUTH_CLIENT_KEY='Key without Quotes'  
+            $ set OAUTH_CLIENT_SECRET='Secret without Quotes'  
 
 3. Build with:
 
-    ```$ mvn clean install```  
+    `$ mvn clean install`  
 
 4. Then run it with:
 
-    ```$ java -jar target/dependency/webapp-runner.jar target/*.war```  
+    `$ java -jar target/dependency/webapp-runner.jar target/*.war`  
 
 5. After first build, simplify testing with:
 
-    ```$ mvn install && java -jar target/dependency/webapp-runner.jar target/*.war```  
+    `$ mvn install && java -jar target/dependency/webapp-runner.jar target/*.war`  
 
 ## Running on Heroku
 
 1. Clone this project locally:
 
-    ```$ git clone https://github.com/forgreed/varrow-java-spring-sforce.git```  
+    `$ git clone https://github.com/forgreed/varrow-java-spring-sforce.git`  
 
 2. Create a new app on Heroku
 
-    ```$ heroku create anyNameYouLike```  
+    `$ heroku create anyNameYouLike`  
 
 3. Setup OAuth Remote Access in Salesforce.com
 
     1. Go to Salesforce.com's Setup page
     2. Go to Create -> Apps
-    3. Add a new Connected App with a URL of: ```http://your-app.herokuapp.com/_auth```
+    3. Add a new Connected App with a URL of: `http://your-app.herokuapp.com/_auth`
 
 4. Add config params for authenticating to Salesforce.com obtained from the Connected App detail page:
 
-    ```$ heroku config:add OAUTH_CLIENT_KEY='Key without Quotes'```  
-    ```$ heroku config:add OAUTH_CLIENT_SECRET='Secret without Quotes'```  
+    `$ heroku config:add OAUTH_CLIENT_KEY='Key without Quotes'`  
+    `$ heroku config:add OAUTH_CLIENT_SECRET='Secret without Quotes'`  
 
 5. Push the app to Heroku ('''mvn clean install''' is run automatically):
 
-    ```$ git push heroku master```  
+    `$ git push heroku master`  
 
 6. Open the app in your browser:
 
-    ```$ heroku open```  
+    `$ heroku open`  
 
 ## Running on Cloud Foundry
 
 1. Clone this project locally:
 
-    ```$ git clone https://github.com/forgreed/varrow-java-spring-sforce.git```  
+    `$ git clone https://github.com/forgreed/varrow-java-spring-sforce.git`  
 
-2. Set app name and environment variables in ```/manifest.yml```  
+2. Set app name and environment variables in `/manifest.yml`  
 
 3. Build the app using and Push to Cloud Foundry
 
-    ```$ mvn clean install```  
-    ```$ cf push```  
+    `$ mvn clean install`  
+    `$ cf push`  
 
-4. Navigate to the presented url, i.e. ```my-app.cfapps.io```
+4. Navigate to the presented url, i.e. `my-app.cfapps.io`
 
 ## To do:
 
