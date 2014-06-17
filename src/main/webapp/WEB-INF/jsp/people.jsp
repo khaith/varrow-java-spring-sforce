@@ -13,7 +13,6 @@
 
     <link href="/assets/public/css/bootstrap.min.css" rel="stylesheet">
     <link href="/assets/public/css/bootstrap-responsive.min.css" rel="stylesheet">
-    <link href="/heroku.css" rel="stylesheet">
 </head>
 
 <body>s

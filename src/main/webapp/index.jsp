@@ -5,7 +5,6 @@
 </head>
 <body>
 	<script>
-		window.location = "/people/";
 	</script>
 	<h1>
 		If not redirected automatically, follow the link below:

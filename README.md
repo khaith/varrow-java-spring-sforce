@@ -18,9 +18,8 @@ This application can be run on:
 * [Java JDK 7](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html) - WILL NOT WORK WITH JDK 8
 * [Apache Maven](http://maven.apache.org/download.cgi)
 * [git command line tools](http://git-scm.com/downloads)
-* [Heroku Toolbelt](https://toolbelt.heroku.com/) and account: ```$ heroku login```
-* [Cloud Foundry command line tools](https://github.com/cloudfoundry/cli/releases) and account: ```$ cf login```
-
+* [Heroku Toolbelt](https://toolbelt.heroku.com/) and account: `$ heroku login`
+* [Cloud Foundry command line tools](https://github.com/cloudfoundry/cli/releases) and account: `$ cf login`
 
 ## Clone this app locally:
 
@@ -33,7 +32,7 @@ This application can be run on:
 
     1. Go to Salesforce.com's Setup page
     2. Go to Create -> Apps
-    3. Add a new Connected App with a URL of: ```http://localhost:8080/_auth```
+    3. Add a new Connected App with a URL of: `http://localhost:8080/_auth`
         - This can be reused for multiple oauth2 apps
 
 2. Add environment variables for authenticating to Salesforce.com obtained from the Connected App detail page:
@@ -54,11 +53,11 @@ This application can be run on:
 
 4. Then run it with:
 
-    `$ java -jar target/dependency/webapp-runner.jar target/*.war`  
+    `$ java -jar target/dependency/webapp-runner.jar target/varrow-java-spring-sforce-0.0.1`  
 
 5. After first build, simplify testing with:
 
-    `$ mvn install && java -jar target/dependency/webapp-runner.jar target/*.war`  
+    `$ mvn install && java -jar target/dependency/webapp-runner.jar target/varrow-java-spring-sforce-0.0.1`  
 
 ## Running on Heroku
 

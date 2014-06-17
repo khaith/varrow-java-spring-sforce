@@ -1,9 +1,9 @@
 applications:
-- name: insertNameHere
-  env:
-  	OAUTH_CLIENT_KEY: insertKeyHere
-  	OAUTH_CLIENT_SECRET: insertSecretHere
+- name: varrow-spring-template
   memory: 512M
   instances: 1
   path: target/varrow-java-spring-sforce-0.0.1
   buildpack: https://github.com/cloudfoundry/java-buildpack
+  env:
+    OAUTH_CLIENT_KEY: 3MVG9VmVOCGHKYBSCAfWkFveQdwU4SOrIxxOMKuXxRGzaGOGgkkPBkazLRnoLZWf0NzbUEptPRzEbXlMydf2g
+    OAUTH_CLIENT_SECRET: 2686887070428587222
